@@ -32,7 +32,7 @@ client.on_message = on_message
 client.connect(host="127.0.0.1", port=1883, keepalive=60, bind_address="")
 
 # subscribing to the topic
-client.subscribe(topic="sensors/temperature", qos=1)
+client.subscribe(topic="/sensors/temperature", qos=1)
 # quality of service:
 # 0: The broker/client will deliver the message once, 
 #    with no confirmation.
